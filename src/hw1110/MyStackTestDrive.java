@@ -2,7 +2,7 @@ package hw1110;
 
 public class MyStackTestDrive {
 	public static void main(String[] args){
-		hw1110.MyStack s = new hw1110.MyStack(); //create a stack
+		hw1110.MyStack<String> s = new hw1110.MyStack<String>(); //create a stack
 		java.util.Scanner input = new java.util.Scanner(System.in); //create a scanner
 		System.out.println("Please input five String");
 		String[] order = {"first","second","third","fourth","fifth"};

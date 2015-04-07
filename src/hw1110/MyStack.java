@@ -1,21 +1,21 @@
 package hw1110;
 
-public class MyStack extends java.util.ArrayList{
+public class MyStack<E> extends java.util.ArrayList<E>{
 	public int getSize(){
 		return super.size();
 	} // stack getsize is arraylist size
 	
-	public Object peek(){
+	public E peek(){
 		return super.get(super.size()-1);
 	}// return the last element in arraylist
 	
-	public Object pop(){
-		Object o = super.get(super.size()-1);
+	public E pop(){
+		E o = super.get(super.size()-1);
 		super.remove(super.size()-1);
 		return o;
 	}// return the last element first then remove it from arraylist
 	
-	public void push(Object o){
+	public void push(E o){
 		super.add(o);
 	}// push is same to the add in arraylist
 	
